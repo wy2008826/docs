@@ -24,15 +24,16 @@ module.exports = {
         ],
         sidebar: [
             ['/index/','首页'],// [link,text]
-            ['/aa','aa'],// [link,text]
             {
                 title: 'CSS',
                 collapsable: false,
                 children: [
-                    ['/css/','CSS规范'],
+                    ['/css/nameRule','命名规范'],
+                    ['/css/components','组件'],
+                    ['/css/problem','常见问题'],
                 ]
             },
-            ['/css/','CSS规范'],
+            // ['/css/','CSS规范'],
         ],
         sidebarDepth: 2,
         // lastUpdated: 'Last Updated',
