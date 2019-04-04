@@ -35,6 +35,6 @@ module.exports = {
             ['/css/','CSS规范'],
         ],
         sidebarDepth: 2,
-        lastUpdated: 'Last Updated',
+        // lastUpdated: 'Last Updated',
     }
 }
