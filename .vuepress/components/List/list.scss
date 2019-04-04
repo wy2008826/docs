@@ -1,0 +1,23 @@
+.van-list {
+	&__loading {
+		text-align: center;
+
+		.van-loading,
+		&-text {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.van-loading {
+			width: 0.32rem;
+			height: 0.32rem;
+			margin-right: 0.1rem;
+		}
+
+		&-text {
+			font-size: 0.26rem;
+			color: $gray-dark;
+			line-height: 1rem;
+		}
+	}
+}

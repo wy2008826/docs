@@ -1,0 +1,63 @@
+.van-field {
+    .van-cell__title {
+        max-width: 1.8rem;
+    }
+    .van-cell__value {
+        position: relative;
+    }
+    &__control {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+        resize: none;
+        box-sizing: border-box;
+        &:disabled {
+            opacity: 1;
+            color: $gray-darker;
+            background-color: transparent;
+        }
+    }
+    &__icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        padding: 0.2rem 0 0.2rem 0.2rem;
+        transform: translate3d(0, -50%, 0);
+        .van-icon {
+            display: block;
+        }
+    }
+    &__button {
+        padding-left: 0.2rem;
+    }
+    &__error-message {
+        color: $red;
+        font-size: 0.24rem;
+        text-align: left;
+    }
+    &--disabled {
+        .van-field__control {
+            color: $gray-dark;
+        }
+    }
+    &--error {
+        .van-field__control {
+            &,
+            &::placeholder {
+                color: $red;
+            }
+        }
+    }
+    &--min-height {
+        .van-field__control {
+            min-height: 1.2rem;
+        }
+    }
+    &--has-icon {
+        .van-field__control {
+            padding-right: 0.4rem;
+        }
+    }
+}
