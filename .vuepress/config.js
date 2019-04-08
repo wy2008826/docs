@@ -2,6 +2,7 @@ module.exports = {
     title: '古茗科技前端开发文档',
     description: '代码规范、自有组件调用',
     base: "/",
+    host:'192.168.1.85',
     port:1111,//启动端口
     dest:'.vuepress/dist',//指定 vuepress build 的输出目录。
     serviceWorker:true,//如果设置为 true，VuePress 将自动生成并注册一个 service worker ，这个 worker 将内容缓存以供离线使用（仅在生产环境中启用）。
