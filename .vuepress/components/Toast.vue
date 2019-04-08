@@ -42,6 +42,9 @@
     }
 </script>
 <style lang="scss" scoped>
+    @import '../public/scss/iconfont/iconfont.css';
+    @import '../public/scss/mixin.scss';
+    @import '../public/scss/index.scss';
     .fade1-enter-active, .fade1-leave-active {
         transition: all ease 400ms;
         min-height: 1rem;
@@ -52,19 +55,19 @@
     }
     .shade {
         @include box((w:100%, h:100%, bg:rgba(100, 100, 100, 0.5)));
-        @include position((p:fixed, t:0, r:0, b:0, l:0));
+        @include position((p:fixed, t:0, r:0, b:0, l:0,z:10));
     }
     .toast {
-        @include position((p:fixed, r:0, b:0, l:0));
+        @include position((p:fixed, r:0, b:0, l:0,z:10));
         background-color: $white;
         /*min-height: 1rem;*/
         .title{
-            @include box((lh:1rem,p:0 0.3rem,fs:0.3rem));
+            @include box((lh:4rem,p:0 1.2rem,fs:1.2rem));
             @include thin('bottom',$borderColor)
         }
         .cancel {
-            $btnH: 1rem;
-            @include box((w:100%, lh:$btnH, ta:center, bg:$white, fs:0.36rem, c:$black2));
+            $btnH: 4rem;
+            @include box((w:100%, lh:$btnH, ta:center, bg:$white, fs:1.4rem, c:$black2));
             &.red{
                 @include box((bg:$red,c:$white));
             }

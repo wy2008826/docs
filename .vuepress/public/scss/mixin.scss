@@ -1,0 +1,248 @@
+//$base_url: '/src/assets/img/';
+
+//#333333  #666666 #999999 #cccccc #dbdbdb  #ff6400
+
+$body_bg_color:#F2F2F2;
+
+$black: #000;
+$white: #fff;
+$red: #F64C3E;
+$blue: #4992EC;
+$blue2: #3ce0ce;
+$black2: #222;
+$black3: #333;
+$black5: #555;
+$black6: #666;
+$black9: #999;
+$gray: #ccc;
+$yellow: #FF6600;
+$gold: #d7a55e;
+
+$borderColor:#dbdbdb;
+$primary :#f85f48;
+
+// 主题颜色
+$theme1: #ff8200;
+$theme2: #ff5601;
+/* color variables */
+$placeHoderColor:#a8a8a8;
+
+
+//$red: #f44;
+//$blue: #38f;
+$orange: #f60;
+$green: #06bf04;
+//$gray: #c9c9c9;
+$gray-light: #e5e5e5;
+$gray-darker: #666;
+$gray-dark: #999;
+$gray-f1: #f1f1f1;
+
+/* default colors */
+$text-color: #333;
+$border-color: #eee;
+$active-color: #e8e8e8;
+$background-color: #f8f8f8;
+
+/* button */
+$button-default-color: $text-color;
+$button-default-background-color: $white;
+$button-default-border-color: $border-color;
+$button-primary-color: $white;
+$button-primary-background-color: $primary;
+$button-primary-border-color: $primary;
+$button-danger-color: $white;
+$button-danger-background-color: $red;
+$button-danger-border-color: $red;
+$button-disabled-color: $gray-dark;
+$button-disabled-background-color: $border-color;
+$button-disabled-border-color: $gray-light;
+$button-bottom-action-default-color: $white;
+$button-bottom-action-default-background-color: #f85;
+$button-bottom-action-primary-color: $white;
+$button-bottom-action-primary-background-color: $red;
+
+
+//$size_t :constant(safe-area-inset-top);
+//$size_b : constant(safe-area-inset-bottom);
+
+$size_constant_t : calc(constant(safe-area-inset-top)*3);
+$size_env_t : calc(env(safe-area-inset-top)*3);
+$size_constant_b : calc(constant(safe-area-inset-bottom)*3 );
+$size_env_b : calc(env(safe-area-inset-bottom)*3);
+
+@mixin bg($img){
+  background-image: url('#{$img}');
+}
+
+@mixin bg_img($img){
+  background: url('#{$img}') no-repeat;
+  background-size: 100%;
+}
+@mixin box($param){
+  width: map-get($param,w);
+  height: map-get($param,h);
+  font-size: map-get($param,fs);
+  line-height: map-get($param,lh);
+  font-weight: map-get($param,fw);
+  background: map-get($param,bg);
+  color: map-get($param,c);
+  border-radius: map-get($param,bdr);
+  text-align: map-get($param,ta);
+  opacity: map-get($param,o);
+  float: map-get($param,fl);
+  text-shadow: map-get($param,ts);
+  box-shadow: map-get($param,bs);
+  display: map-get($param,d);
+  flex: map-get($param,fx);
+  margin: map-get($param,m);
+  padding: map-get($param,p);
+  border: map-get($param,br);
+}
+@mixin position($param){
+  position: map-get($param,p);
+  top: map-get($param,t);
+  left: map-get($param,l);
+  right: map-get($param,r);
+  bottom: map-get($param,b);
+  z-index: map-get($param,z);
+
+  $p:map-get($param,p);
+  $b:map-get($param,b);
+  $t:map-get($param,t);
+
+  //兼容iphoneX机型
+  @if($p == fixed and $b==0){
+    //bottom:calc($b + constant(safe-area-inset-bottom));
+    //bottom:calc($b + env(safe-area-inset-bottom));
+    bottom: $size_constant_b;
+    bottom: $size_env_b;
+  }
+  @if($p == fixed and $t==0){
+    //bottom:calc($b + constant(safe-area-inset-bottom));
+    //bottom:calc($b + env(safe-area-inset-bottom));
+    top: $size_constant_t;
+    top:  $size_env_t;
+  }
+  @if($p == fixed and $b!=0 and $b!=1px){
+    //bottom:calc($b + constant(safe-area-inset-bottom));
+    //bottom:calc($b + env(safe-area-inset-bottom));
+    margin-bottom: $size_constant_b;
+    margin-bottom: $size_env_b;
+  }
+}
+
+@mixin thin($property,$color){
+  @if($property == 'all'){
+    border: 1px solid $color;
+  }@else {
+    @each $dir in $property {
+      border-#{$dir}: 1px solid $color;
+    }
+  }
+}
+
+@mixin prefix($property, $value) {
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+    #{$prefix}#{$property}: $value;
+  }
+}
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin tringle($param) {
+  $direction:map-get($param,to);
+  $w:map-get($param,w);
+  $h:map-get($param,h);
+  $color:map-get($param,c);
+
+  content:'';
+  display: block;
+  width:0;
+  height:0;
+
+  border-#{$direction}:0;
+
+  @if( $direction== 'top'){
+    border-left: $w / 2 solid transparent;
+    border-right: $w / 2 solid transparent;
+    border-bottom: $h / 2 solid $color;
+  }@else if $direction== 'bottom'{
+    border-left: $w / 2 solid transparent;
+    border-right: $w / 2 solid transparent;
+    border-top: $h / 2 solid $color;
+  }@else if $direction== 'right'{
+    border-top: $h / 2 solid transparent;
+    border-bottom: $h / 2 solid transparent;
+    border-left: $w / 2 solid $color;
+  }@else if $direction== 'left'{
+    border-top: $h / 2 solid transparent;
+    border-bottom: $h / 2 solid transparent;
+    border-right: $w / 2 solid $color;
+  }
+
+}
+
+@mixin fixEditorFontSize(){
+  /*兼容B端编辑器的文字样式*/
+*[style*="xx-large"] {
+  font-size: 0.48rem !important;
+}
+*[style*="x-large"] {
+  font-size: 0.42rem !important;
+}
+*[style*="large"] {
+  font-size: 0.36rem !important;
+}
+*[style*="normal"] {
+  font-size: 0.3rem !important;
+}
+*[style*="small"] {
+  font-size: 0.26rem !important;
+}
+*[style*="x-small"] {
+  font-size: 0.22rem !important;
+}
+}
+
+
+@mixin ellipsis(){
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+
+@mixin clearfix(){
+  &:after{
+    content:'';
+    height:1px;
+    display: block;
+    clear: both;
+  }
+}
+
+
+@mixin setIphoneXBarSize($property){
+
+
+  @if( $property == 'margin-top' or $property == 'padding-top'){
+      #{$property}: $size_constant_t;
+      #{$property}: $size_env_t;
+  }@else if($property == 'margin-bottom' or $property == 'padding-bottom'){
+      #{$property}: $size_constant_b;
+      #{$property}: $size_env_b;
+  }
+}
+

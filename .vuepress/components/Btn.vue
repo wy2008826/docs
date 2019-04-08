@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="btn">
         <a v-if="!href"
            v-text="label"
            :class="type"
@@ -27,9 +27,13 @@
     }
 </script>
 <style lang="scss" scoped>
+    @import '../public/scss/iconfont/iconfont.css';
+    @import '../public/scss/mixin.scss';
+    @import '../public/scss/index.scss';
+
     $disabledColr:#b5b5b5;
     .btn{
-        @include box((d:block,h:0.8rem,lh:0.8rem,ta:center,fs:0.32rem,bdr:0.14rem));
+        @include box((d:block,h:3.2rem,lh:3.2rem,ta:center,fs:1.2rem,bdr:0.64rem));
     }
     .primary{
         @extend .btn;

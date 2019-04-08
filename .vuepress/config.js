@@ -1,5 +1,5 @@
 module.exports = {
-    title: '前端开发文档',
+    title: '古茗科技前端开发文档',
     description: '代码规范、自有组件调用',
     base: "/",
     port:1111,//启动端口
@@ -37,5 +37,12 @@ module.exports = {
         ],
         sidebarDepth: 2,
         // lastUpdated: 'Last Updated',
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@components': '/components'
+            }
+        }
     }
 }
