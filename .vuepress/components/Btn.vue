@@ -34,6 +34,7 @@
     $disabledColr:#b5b5b5;
     .btn{
         @include box((d:block,h:3.2rem,lh:3.2rem,ta:center,fs:1.2rem,bdr:0.64rem));
+        cursor: pointer;
     }
     .primary{
         @extend .btn;

@@ -25,6 +25,7 @@ module.exports = {
         ],
         sidebar: [
             ['/index/','首页'],// [link,text]
+            ['/frontNewPerson/join','前端新人入职准备'],
             {
                 title: 'CSS',
                 collapsable: false,
@@ -32,6 +33,13 @@ module.exports = {
                     ['/css/nameRule','命名规范'],
                     ['/css/components','组件'],
                     ['/css/problem','常见问题'],
+                ]
+            },
+            {
+                title: 'C端组件',
+                collapsable: false,
+                children: [
+                    ['/comps/Button','Button'],
                 ]
             },
             // ['/css/','CSS规范'],
