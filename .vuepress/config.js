@@ -21,28 +21,32 @@ module.exports = {
                 ]
             },
             { text: '关于', link: '/about/' },
-            { text: 'Github', link: 'https://www.github.com/codeteenager' },
+            // { text: 'Github', link: 'https://www.github.com/codeteenager' },
         ],
         sidebar: [
-            ['/index/','首页'],// [link,text]
+            // ['/index/','首页'],// [link,text]
             ['/frontNewPerson/join','前端新人入职准备'],
+
             {
-                title: 'CSS',
+                title: 'C端组件库',
                 collapsable: false,
                 children: [
-                    ['/css/nameRule','命名规范'],
-                    ['/css/components','组件'],
-                    ['/css/problem','常见问题'],
-                ]
-            },
-            {
-                title: 'C端组件',
-                collapsable: false,
-                children: [
+                    ['/comps/Input','Input'],
+                    ['/comps/Toast','Toast'],
                     ['/comps/Button','Button'],
+                    ['/comps/Others','.....'],
                 ]
             },
-            // ['/css/','CSS规范'],
+            ['/css/nameRule','代码命名规范'],
+            ['/css/uiRule','ui规范约定'],
+            // {
+            //     title: '命名规范',
+            //     collapsable: false,
+            //     children: [
+            //         ['/css/nameRule','命名规范'],
+            //         // ['/css/problem','常见问题'],
+            //     ]
+            // },
         ],
         sidebarDepth: 2,
         // lastUpdated: 'Last Updated',
@@ -50,7 +54,9 @@ module.exports = {
     configureWebpack: {
         resolve: {
             alias: {
-                '@components': '/components'
+                '@': '/',
+                'components':'/components',
+                'utils':'/utils',
             }
         }
     }
