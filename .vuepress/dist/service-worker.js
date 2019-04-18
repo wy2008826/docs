@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "8d61bc212ddf671db0f17f40e694bb99"
+    "revision": "b245ec324ccfc387dab4c5732ce0fd2f"
   },
   {
     "url": "assets/css/0.styles.1a4248fd.css",
@@ -192,44 +192,44 @@ self.__precacheManifest = [
     "revision": "8411a3e7b1e4c8118b26e03acfcc87f7"
   },
   {
-    "url": "assets/js/app.69004799.js",
-    "revision": "b713b47616ffa436af83531dbf22b35e"
+    "url": "assets/js/app.11dac794.js",
+    "revision": "ee4391aa175a3985d949135ddfdeebb7"
   },
   {
     "url": "comps/Button.html",
-    "revision": "80127de4faff7911640e24e7b6e295df"
+    "revision": "ff7362d1e1744f2000ba8698d75fba23"
   },
   {
     "url": "comps/Input.html",
-    "revision": "316a1b76b2d009b6ed23d7b6d27ea381"
+    "revision": "de6aa1d6f9d27a390251164711ee56ec"
   },
   {
     "url": "comps/Others.html",
-    "revision": "a4d981d2f003a7e5d03a0db063555697"
+    "revision": "627feef916520ab7edca451162e9ef6e"
   },
   {
     "url": "comps/Toast.html",
-    "revision": "3012ae80d3a750baf7bdbd7044135ccf"
+    "revision": "2ee5a697b90c503763206c4eb342ee9d"
   },
   {
     "url": "css/components.html",
-    "revision": "d617d146f9a4fe46451ead5229b15567"
+    "revision": "16c053d1036fe375912846d1843f117f"
   },
   {
     "url": "css/nameRule.html",
-    "revision": "74ae41815cefb27e314be968dd174e18"
+    "revision": "d58181c796e59810901a98583b760dba"
   },
   {
     "url": "css/problem.html",
-    "revision": "c012578f5df156119a0583eb3ef389cb"
+    "revision": "2ea3182f28023e64f2fc4372a7c6bbac"
   },
   {
     "url": "css/uiRule.html",
-    "revision": "52357bd38401d197a0f17d1012a75d8e"
+    "revision": "335794cfe49375dec8f411d7deb0ab19"
   },
   {
     "url": "frontNewPerson/join.html",
-    "revision": "d27d3d9765b1a6fa0d96ee1158e46aec"
+    "revision": "a9b1558fd6f980c1412df087eff159bf"
   },
   {
     "url": "img/a.jpg",
@@ -237,11 +237,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "14d892a6e5068c1aa7ff017e5e132465"
+    "revision": "4612e8a5a3eb1e08d9935152878bce24"
   },
   {
     "url": "index/index.html",
-    "revision": "dfd3a4c19c1841471869ccd957a7bb56"
+    "revision": "aa61c3d1878bc00234cf50758c0b72c7"
   },
   {
     "url": "scss/iconfont/iconfont.css",
