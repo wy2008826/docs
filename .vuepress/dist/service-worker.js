@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "b245ec324ccfc387dab4c5732ce0fd2f"
+    "revision": "b076532ac45a2bc666a3dc73af9a0bef"
   },
   {
-    "url": "assets/css/0.styles.1a4248fd.css",
-    "revision": "2b499a87b9844d8cbc6ba3f47e632f6d"
+    "url": "assets/css/0.styles.8b8e30ea.css",
+    "revision": "52eb3ee479851e6980f213bc648dcbd1"
   },
   {
     "url": "assets/fonts/iconfont.54cd4321.ttf",
@@ -192,44 +192,44 @@ self.__precacheManifest = [
     "revision": "8411a3e7b1e4c8118b26e03acfcc87f7"
   },
   {
-    "url": "assets/js/app.11dac794.js",
-    "revision": "ee4391aa175a3985d949135ddfdeebb7"
+    "url": "assets/js/app.8ce0e67c.js",
+    "revision": "60248648870d709f7950c060933eaf23"
   },
   {
     "url": "comps/Button.html",
-    "revision": "ff7362d1e1744f2000ba8698d75fba23"
+    "revision": "0f7345fa042631872ac640a6fe3cc738"
   },
   {
     "url": "comps/Input.html",
-    "revision": "de6aa1d6f9d27a390251164711ee56ec"
+    "revision": "6077bb3d54dbf6070596ad60547d15ce"
   },
   {
     "url": "comps/Others.html",
-    "revision": "627feef916520ab7edca451162e9ef6e"
+    "revision": "87d0ef034075bd705d040d6dc062d4f3"
   },
   {
     "url": "comps/Toast.html",
-    "revision": "2ee5a697b90c503763206c4eb342ee9d"
+    "revision": "16d1dc013e47870ab398201ad3f40df8"
   },
   {
     "url": "css/components.html",
-    "revision": "16c053d1036fe375912846d1843f117f"
+    "revision": "21b0d031b77e7bb4f2b65b1a07762012"
   },
   {
     "url": "css/nameRule.html",
-    "revision": "d58181c796e59810901a98583b760dba"
+    "revision": "47f431db66b6e721aae88b50713fe6ad"
   },
   {
     "url": "css/problem.html",
-    "revision": "2ea3182f28023e64f2fc4372a7c6bbac"
+    "revision": "7f0d9d06bb462973411b21e8b9c8e1cb"
   },
   {
     "url": "css/uiRule.html",
-    "revision": "335794cfe49375dec8f411d7deb0ab19"
+    "revision": "c24c71f0da00187f852c1e202b8175c0"
   },
   {
     "url": "frontNewPerson/join.html",
-    "revision": "a9b1558fd6f980c1412df087eff159bf"
+    "revision": "cc9e58ff958681dd6bd2b88e03d0f67c"
   },
   {
     "url": "img/a.jpg",
@@ -237,11 +237,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "4612e8a5a3eb1e08d9935152878bce24"
+    "revision": "6a7d0a503c28595664d045d79d1a08d2"
   },
   {
     "url": "index/index.html",
-    "revision": "aa61c3d1878bc00234cf50758c0b72c7"
+    "revision": "3cd2c19b0c67281ddff8c3a69cd277b1"
   },
   {
     "url": "scss/iconfont/iconfont.css",
