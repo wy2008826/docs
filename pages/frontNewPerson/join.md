@@ -9,27 +9,41 @@
 * git安装
 
 
-* gitlab账号注册  （注册好之后告知相关负责人，拉入项目成员列表）
+* #### gitlab账号注册  （注册好之后告知相关负责人，拉入项目成员列表）
     
     注册地址 ： [http://gitlab.gumingnc.com/](http://gitlab.gumingnc.com/)
 
-* UI设计稿线上地址 蓝湖账号注册 （通过下方地址注册即可看到项目）
+* #### UI设计稿线上地址 蓝湖账号注册 （通过下方地址注册即可看到项目）
 
-    注册地址 ： [https://lanhuapp.com/url/bLyli](https://lanhuapp.com/url/bLyli)
+    ftp地址 ： [http://10.2.21.248/UI/upload/](http://10.2.21.248/UI/upload/)
+
+* #### 产品原型图
+
+    ftp地址 ： [http://10.2.21.248/product/upload/demo/](http://10.2.21.248/product/upload/demo/)
     
-* 注册 iconfont账号 （注册号之后，将用户名发给王宇，拉入项目图标管理）
+    
+    
+* #### 注册 iconfont账号 （注册号之后，将用户名发给王宇，拉入项目图标管理）
 
     注册地址 ： [https://www.iconfont.cn/](https://www.iconfont.cn/)
 
-* 石墨文档账号注册 （迭代进度管理、部分文档、资料分享等  注册号之后把账号告知张帅，拉入小组后即可看到内容）
+* #### 石墨文档账号注册 （迭代进度管理、部分文档、资料分享等  注册号之后把账号告知张帅，拉入小组后即可看到内容）
    
     注册地址 ： [https://shimo.im/](https://shimo.im/)
 
-* 禅道地址 （告知崔超楠，建立禅道账号）
+* #### 禅道地址 （告知崔超楠，建立禅道账号）
     
     禅道地址  [http://zbox.gumingnc.com/zentao/index.php](http://zbox.gumingnc.com/zentao/index.php)
+    禅道地址  [http://10.2.21.249/zentao/index.php](http://10.2.21.249/zentao/index.php)
+    
+    
+* #### 测试服务器堡垒机 （联系运维同学-高鹏程给账号密码）
 
-* 接口联调API地址  
+    注册地址 ： [http://47.111.75.12/auth/login/](http://47.111.75.12/auth/login/)
+        
+    
+
+* #### 接口联调API地址  
 
   地址格式 : http://host:port/swagger-ui.html 
   
