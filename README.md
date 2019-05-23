@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/a.jpg
 actionText: 点击查看 →
-actionLink: /frontNewPerson/join.html
+actionLink: /pages/frontNewPerson/join.html
 features:
 - title: 代码规范
   details: css、js代码规范、命名规则
